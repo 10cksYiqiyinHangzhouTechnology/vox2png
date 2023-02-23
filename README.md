@@ -104,7 +104,7 @@ Shadow byte legend (one shadow byte represents 8 application bytes):
 ```
 
 **Use gdb analysis**
-```
+```bash
 ubuntu@ubuntu:~/Desktop/vox2png$ gdb --args ./vox2png id11 
 GNU gdb (Ubuntu 9.2-0ubuntu1~20.04.1) 9.2
 Copyright (C) 2020 Free Software Foundation, Inc.
