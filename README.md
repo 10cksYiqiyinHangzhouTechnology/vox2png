@@ -21,9 +21,9 @@ SUMMARY: AddressSanitizer: heap-buffer-overflow /home/ubuntu/Desktop/vox2png/vox
 
 ```
 
-[Poc file](https://github.com/10cksYiqiyinHangzhouTechnology/Security-Issue-Report-of-TinyTIFF/blob/main/id8)
+[Poc file](https://github.com/10cksYiqiyinHangzhouTechnology/vox2png/blob/main/id11)
 
-[asan_tinytiffreader](https://github.com/10cksYiqiyinHangzhouTechnology/Security-Issue-Report-of-TinyTIFF/blob/main/asan_tinytiffreader)
+[asan_tinytiffreader](https://github.com/10cksYiqiyinHangzhouTechnology/vox2png/blob/main/asan_vox2png)
 
 **ASAN Report:**
 
