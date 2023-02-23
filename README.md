@@ -13,18 +13,6 @@ ubuntu@ubuntu:~$ uname -a
 Linux ubuntu 5.15.0-58-generic #64~20.04.1-Ubuntu SMP Fri Jan 6 16:42:31 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
 ```
 
-**compile the test case in the source**
-
-```
-gcc vox2png.c -o vox2png -lm
-./vox2png input.vox output.png
-```
-
-**Test Poc**
-```
-./asan_vox2png id11
-```
-
 
 **Summary**
 
@@ -44,6 +32,16 @@ SUMMARY: AddressSanitizer: heap-buffer-overflow /home/ubuntu/Desktop/vox2png/vox
 [asan_vox2png](https://github.com/10cksYiqiyinHangzhouTechnology/vox2png/blob/main/asan_vox2png)
 
 **compile the test case in the source**
+
+```
+gcc vox2png.c -o vox2png -lm
+./vox2png input.vox output.png
+```
+
+**Test Poc**
+```
+./asan_vox2png id11
+```
 
 
 
