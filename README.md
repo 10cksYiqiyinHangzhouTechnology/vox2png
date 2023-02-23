@@ -2,11 +2,29 @@
 
 https://github.com/jemisa/vox2png
 
-
-
 **Security Issue Report**
 
-A **heap-buffer-overflow** issue was discovered in vox2png project in **vox2png.c** file. The flow allows an attacker to cause a denial of service (abort) via a crafted file.
+A heap-buffer-overflow issue was discovered in vox2png project in vox2png.c file. The flow allows an attacker to cause a denial of service (abort) via a crafted file.
+
+**OS information**
+
+```
+ubuntu@ubuntu:~$ uname -a
+Linux ubuntu 5.15.0-58-generic #64~20.04.1-Ubuntu SMP Fri Jan 6 16:42:31 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+```
+
+**compile the test case in the source**
+
+```
+gcc vox2png.c -o vox2png -lm
+./vox2png input.vox output.png
+```
+
+**Test Poc**
+```
+./asan_vox2png id11
+```
+
 
 **Summary**
 
@@ -21,9 +39,13 @@ SUMMARY: AddressSanitizer: heap-buffer-overflow /home/ubuntu/Desktop/vox2png/vox
 
 ```
 
-[Poc file](https://github.com/10cksYiqiyinHangzhouTechnology/vox2png/blob/main/id11)
+[Poc file: id11](https://github.com/10cksYiqiyinHangzhouTechnology/vox2png/blob/main/id11)
 
-[asan_tinytiffreader](https://github.com/10cksYiqiyinHangzhouTechnology/vox2png/blob/main/asan_vox2png)
+[asan_vox2png](https://github.com/10cksYiqiyinHangzhouTechnology/vox2png/blob/main/asan_vox2png)
+
+**compile the test case in the source**
+
+
 
 **ASAN Report:**
 
