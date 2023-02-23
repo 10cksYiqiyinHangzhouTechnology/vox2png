@@ -6,7 +6,7 @@ https://github.com/jemisa/vox2png
 
 **Security Issue Report**
 
-A heap-buffer-overflow issue was discovered in vox2png in tinytiffreader.c file. The flow allows an attacker to cause a denial of service (abort) via a crafted file.
+A **heap-buffer-overflow** issue was discovered in vox2png in **vox2png.c** file. The flow allows an attacker to cause a denial of service (abort) via a crafted file.
 
 **Summary**
 
