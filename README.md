@@ -174,5 +174,5 @@ Stopped reason: SIGSEGV
 256	        pngData[dataIndex] = currentColor;
 ```
 
-
+You can see this is overflow.
 
