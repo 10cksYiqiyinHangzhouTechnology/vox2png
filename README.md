@@ -45,7 +45,7 @@ gcc vox2png.c -o vox2png -lm
 
 
 
-**ASAN Report:**
+**ASAN Report**
 
 ```bash
 ubuntu@ubuntu:~/Desktop/vox2png$ ./asan_vox2png out/default/crashes/id\:000011\,sig\:11\,src\:000000+000158\,time\:115193\,execs\:9320\,op\:splice\,rep\:4 
