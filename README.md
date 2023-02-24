@@ -205,4 +205,4 @@ You can see this is overflow.Original code:
         pngData[dataIndex] = currentColor;
     }
 ```
-pngData pointer has a heap cache overflow vulnerability during memory allocation。
+pngData pointer has a heap cache overflow vulnerability during memory allocation.
