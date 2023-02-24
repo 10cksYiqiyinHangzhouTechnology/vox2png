@@ -183,5 +183,26 @@ Stopped reason: SIGSEGV
 256	        pngData[dataIndex] = currentColor;
 ```
 
-You can see this is overflow.
+You can see this is overflow.Original code:
 
+```c
+	/* A buffer with the color data we're going to write to the .png file */
+	color *pngData = NULL;
+	...
+    
+    pngData = calloc(pngWidth * pngHeight, sizeof(color)); // sizeof: return number of bytes 
+    if (!pngData) die("Couldn't allocate a buffer for the color data"); // pngData is not NULL
+    for (int i = 0; i < voxCount; ++i) {  // voxCount= 4104
+        voxel currentVoxel = voxVoxels[i];
+        color currentColor = voxPal[currentVoxel.colorIndex];
+
+        int dataX = currentVoxel.x;
+        int dataY = currentVoxel.y;
+        dataX += currentVoxel.z % xCells * voxXDim;
+        dataY += currentVoxel.z / xCells * voxYDim;
+        int dataIndex = dataX + dataY * pngWidth;
+
+        pngData[dataIndex] = currentColor;
+    }
+```
+pngData pointer has a heap cache overflow vulnerability during memory allocation。
