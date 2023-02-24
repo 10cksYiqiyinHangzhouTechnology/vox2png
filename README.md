@@ -40,7 +40,12 @@ gcc vox2png.c -o vox2png -lm
 ./vox2png input.vox output.png
 ```
 
-**Test Poc**
+**Harness test poc**
+```
+./vox2png id11
+```
+
+**ASAN test Poc**
 ```
 ./asan_vox2png id11
 ```
