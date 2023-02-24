@@ -31,6 +31,8 @@ SUMMARY: AddressSanitizer: heap-buffer-overflow /home/ubuntu/Desktop/vox2png/vox
 
 [asan_vox2png](https://github.com/10cksYiqiyinHangzhouTechnology/vox2png/blob/main/asan_vox2png)
 
+[harness vox2png](https://github.com/10cksYiqiyinHangzhouTechnology/vox2png/blob/main/vox2png)
+
 **compile the test case in the source**
 
 ```
